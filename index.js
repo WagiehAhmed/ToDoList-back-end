@@ -2,7 +2,10 @@ const express = require("express");
 const app =  express();
 
 const cors = require("cors");
-app.use(cors({origin:"*"}));
+app.use(cors({
+    origin: '*',
+    methods: "GET, PUT, POST, DELETE"
+}));
 
 const helmet = require("helmet");
 app.use(helmet());
