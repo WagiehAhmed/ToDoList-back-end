@@ -3,7 +3,7 @@ const app =  express();
 
 const cors = require("cors");
 app.use(cors({
-    origin:'*'
+    origin:'https://to-do-list-front-end-sand.vercel.app/'
 }));
 
 const helmet = require("helmet");
