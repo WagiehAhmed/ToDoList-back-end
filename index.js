@@ -4,7 +4,6 @@ const app =  express();
 const cors = require("cors");
 app.use(cors({
     origin: '*',
-    methods: "GET, PUT, POST, DELETE"
 }));
 
 const helmet = require("helmet");
