@@ -2,9 +2,7 @@ const express = require("express");
 const app =  express();
 
 const cors = require("cors");
-app.use(cors({
-    origin:'https://to-do-list-front-end-sand.vercel.app/'
-}));
+app.use(cors());
 
 const helmet = require("helmet");
 app.use(helmet());
